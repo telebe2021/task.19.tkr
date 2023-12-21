@@ -1,0 +1,147 @@
+header{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 650px;
+    .hdiv{
+        width: 100%;
+        min-height: 650px;
+        display: flex;
+        justify-content: space-between;
+
+        .hd2 {
+            width: 45%;
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+
+            p {
+                font-size: 1.8rem;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            h1 {
+                font-size: 5.5rem;
+            }
+
+            a {
+                background-color: $ora;
+                padding: 14px;
+                width: 175px;
+                height: 50px;
+                font-size: 18px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: black;
+                    color: $ora;
+                }
+            }
+            .hd21{
+                width: 100%;
+                min-height: 70px;
+                display: flex;
+                justify-content: space-between;
+                .hd211{
+                    width: 45%;
+                    display: flex;
+                    gap: 20px;
+                    div{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        img{
+                            height: 100%;
+                        }
+                        h2{
+                            color: $ora;
+                            font-size: 2.7rem;
+                        }
+                        p{
+                            font-size: 2rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .hd22{
+                width: 100%;
+                min-height: 70px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                p{
+                    width: 48%;
+                    
+                    font-size: 1.6rem;
+                    i{
+                        color: $ora;
+                    }
+                }
+            }
+        }
+
+        .hd1 {
+            width: 40%;
+            height: 650px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:hover img{
+                filter: brightness(80%);
+            }
+        }
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+    header{
+        .hdiv{
+            flex-direction: column;
+            .hd1, .hd2{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px){
+    header{
+        .hdiv{
+            flex-direction: column;
+            .hd1{
+                width: 100%;
+            }
+            
+            .hd2{
+                width: 100%;
+                .hd21{
+                    flex-direction: column;
+                    gap: 10px;
+                    .hd211{
+                        width: 100%;
+                    }
+                }
+                .hd22{
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

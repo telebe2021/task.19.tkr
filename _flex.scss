@@ -1,0 +1,106 @@
+.flex{
+    width: 100%;
+    min-height: 1000px;
+    margin-top: -150px;
+    .fldiv{
+        width: 100%;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .gr1{
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+
+            p {
+                font-size: 1.8rem;
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            h1 {
+                font-size: 5.5rem;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                list-style: none;
+                a{
+                    color: black;
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    &:hover{
+                        color: $ora;
+                        border-bottom: 2px solid $ora;
+                    }
+                }
+            }
+        }
+        .gr2{
+            width: 100%;
+            min-height: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            .g1{
+                width: 30%;
+                max-height: 400px;
+                margin-bottom: 50px;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+                &:hover{
+                    filter: brightness(80%);
+                }
+            }
+            .g2{
+                width: 65%;
+            }
+        }
+    }
+}
+@media screen and (min-width:426px) and (max-width: 768px){
+    .flex{
+        .fldiv{
+            .gr1{
+                width: 90%;
+            }
+            .gr2{
+                .g1{
+                    width: 47.5%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px){
+    .flex{
+        .fldiv{
+            .gr1{
+                width: 90%;
+            }
+            .gr2{
+                .g1{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

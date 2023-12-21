@@ -1,0 +1,136 @@
+footer {
+    width: 100%;
+    min-height: 400px;
+    background-color: black;
+
+    .fdiv {
+        width: 100%;
+        min-height: 400px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .fd1 {
+            width: 100%;
+            min-height: 350px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: white;
+
+            .fd11 {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .aa {
+                    text-decoration: none;
+                    font-size: 3.2rem;
+                    font-weight: 1000;
+                    color: white;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .round {
+                    position: relative;
+                    background-color: $ora;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 999999px;
+                    left: 30px;
+                    top: -50px;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+                h2{
+                    font-size: 2.4rem;
+                    margin-top: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.8rem;
+                    &:hover{
+                        color: $ora;
+                    }
+                }
+                div{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        width: 15%;
+                        height: 100%;
+                        background-color: $ora;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3rem;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .fd2{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 30%;
+                margin-top: 20px;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                align-items: center;
+                p{
+                    font-size: 2rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.8rem;
+                    &:hover{
+                        color: $ora;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:426px) and (max-width: 768px){
+    footer{
+        .fdiv{
+            .fd1{
+                .fd11{
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px){
+    footer{
+        .fdiv{
+            .fd1{
+                .fd11{
+                    width: 100%;
+                }
+            }
+            .fd2{
+                flex-direction: column;
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

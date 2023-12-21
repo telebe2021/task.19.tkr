@@ -1,0 +1,147 @@
+.contact{
+    width: 100%;
+    min-height: 750px;
+    .cdiv{
+        width: 100%;
+        min-height: 750px;
+        .cd1{
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+
+            p {
+                font-size: 1.8rem;
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            h1 {
+                font-size: 5.5rem;
+                margin-top: 10px;
+            }
+        }
+        .cd2{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            min-height: 550px;
+            .cd21{
+                width: 65%;
+                height: 550px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5%;
+                input{
+                    width: 47.5%;
+                    height: 75px;
+                    padding-left: 10px;
+                    border: 4px solid $lig;
+                }
+                textarea{
+                    width: 100%;
+                    height: 150px;
+                    padding: 10px;
+                    border: 4px solid $lig;
+                }
+                a{
+                    width: 200px;
+                    height: 40px;
+                    background-color: $ora;
+                    border-radius: 5px;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 2rem;
+                    &:hover{
+                        background-color: black;
+                        color: $ora;
+                    }
+                }
+            }
+            .cd22{
+                width: 30%;
+                height: 440px;
+                display: flex;
+                flex-direction: column;
+                .cd221{
+                    width: 100%;
+                    height: 30%;
+                    margin-bottom: 50px;
+                    display: flex;
+                    gap: 20px;
+                    .cda{
+                        width: 20%;
+                        height: 75%;
+                        background-color: $lig;
+                        color: $ora;
+                        font-size: 4rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    div{
+                        h2{
+                            font-size: 2.5rem;
+                            margin-bottom: 10px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 1.6rem;
+                            &:hover{
+                                color: $ora;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:426px) and (max-width: 768px){
+    .contact{
+        margin-top: 1150px;
+        .cdiv{
+            .cd1{
+                width: 100%;
+            }
+            .cd2{
+                flex-direction: column;
+                .cd21, .cd22{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen  and (max-width: 426px){
+    .contact{
+        margin-top: 1200px;
+        .cdiv{
+            .cd1{
+                width: 100%;
+            }
+            .cd2{
+                flex-direction: column;
+                .cd21, .cd22{
+                    width: 100%;
+                }
+                .cd21{
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

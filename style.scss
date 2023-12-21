@@ -1,0 +1,30 @@
+$ora: #ff6b00;
+$lig: rgba(255, 195, 152, 0.2);
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.con{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 32px;
+}
+@import 'nav';
+@import 'main';
+@import 'header';
+@import 'section';
+@import 'aside';
+@import 'client';
+@import 'flex';
+@import 'reputed';
+@import 'blog';
+@import 'contact';
+@import 'footer';
